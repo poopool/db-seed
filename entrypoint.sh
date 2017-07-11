@@ -7,7 +7,13 @@ apt-get install -y openssl libc-dev gcc git netcat
 
 while ! nc -z rethinkdb 29015
 do
-  echo "rethinkdb svc is not up, going to sleep for 5s..."
+  echo "rethinkdb svc is not up yet, going to sleep for 5s..."
+  sleep 5
+done
+
+while ! nc -z rabbitmq 5672
+do
+  echo "rabbitmq svc is not up yet, going to sleep for 5s..."
   sleep 5
 done
 
