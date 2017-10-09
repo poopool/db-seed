@@ -3,7 +3,7 @@
 BB_BRANCH=${BB_BRANCH:-master}
 
 apt-get update
-apt-get install -y openssl libc-dev gcc git netcat
+apt-get install -y openssl libc-dev gcc git netcat jq
 
 while true
 do
