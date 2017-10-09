@@ -38,6 +38,8 @@ db_utils.main()
 EOF
 echo 'Done Seeding DB...'
 
+sleep 10
+
 if [ $RUN_TEST = true ]
 then
   echo "RUN_TEST flag is set, going to run tester.sh script..."
